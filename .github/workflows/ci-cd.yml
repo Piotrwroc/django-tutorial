@@ -1,4 +1,4 @@
-name: Django CI/CD to GHCR
+name: Django CI/CD to GHCR v2
 
 on:
   push:
