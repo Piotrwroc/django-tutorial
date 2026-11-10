@@ -21,6 +21,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 6. Source code
 COPY . .
 
+# Temporary SECRET_KEY for static collection during build
+ENV SECRET_KEY="key-for-build"
+
 # 7. Collect static files
 RUN python manage.py collectstatic --noinput
 
